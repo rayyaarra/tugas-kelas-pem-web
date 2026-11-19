@@ -1,0 +1,385 @@
+/* Tampilan dasar website */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FFF5E6;
+    color: #493525;
+    margin: 0;
+}
+
+/* Bagian header */
+header {
+    background-color: #F4A340;
+    color: #493525;
+    padding: 25px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 15px;
+}
+
+/* Navigasi */
+nav a {
+    color: #493525;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* Konten utama */
+main {
+    width: 80%;
+    margin: 30px auto;
+}
+
+/* Bagian konten */
+section {
+    background-color: #FFFFFF;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(120, 75, 30, 0.08);
+}
+
+/* Judul */
+h2 {
+    color: #D97706;
+}
+
+h3 {
+    color: #A65E18;
+}
+
+/* Artikel jenis kucing */
+article {
+    background-color: #FFFAF2;
+    border: 1px solid #F3D2A2;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 12px;
+}
+
+/* Tombol */
+button,
+.button {
+    display: inline-block;
+    background-color: #E99532;
+    color: white;
+    padding: 11px 18px;
+    border: none;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover,
+.button:hover {
+    background-color: #C87520;
+    transform: translateY(-2px);
+}
+
+/* Tombol sejajar */
+.tombol-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.tombol-container button,
+.tombol-container .button {
+    margin: 0;
+}
+
+/* Fakta kucing */
+.fakta {
+    display: none;
+    background-color: #FFF0D5;
+    color: #80501D;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: #F4A340;
+    color: #493525;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Tampilan HP */
+@media (max-width: 600px) {
+    main {
+        width: 90%;
+    }
+
+    section {
+        padding: 18px;
+    }
+
+    .tombol-container {
+        flex-wrap: wrap;
+    }
+}
+
+/* Foto jenis kucing */
+article img {
+    width: 100%;
+    max-width: 220px;
+    height: 150px;
+    object-fit: contain;
+    background-color: #FFF5E6;
+    border-radius: 12px;
+    display: block;
+    margin: 0 auto 15px;
+}
+
+
+/* Kartu kucing */
+article {
+    background-color: #FFFAF2;
+    border: 1px solid #F3D2A2;
+    padding: 18px;
+    margin: 15px 0;
+    border-radius: 15px;
+    text-align: center;
+}
+
+article h3 {
+    margin-top: 0;
+}
+
+/* Susunan tiga kartu kucing */
+.kucing-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 18px;
+    margin: 25px 0;
+}
+
+/* Kartu setiap kucing */
+.kucing-card {
+    background-color: #FFFAF2;
+    border: 1px solid #F3D2A2;
+    border-radius: 15px;
+    padding: 15px;
+    margin: 0;
+    text-align: center;
+    min-width: 0;
+}
+
+/* Foto kucing */
+.kucing-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    display: block;
+    margin-bottom: 12px;
+}
+
+/* Nama kucing */
+.kucing-card h3 {
+    font-size: 17px;
+    margin: 10px 0;
+}
+
+/* Deskripsi kucing */
+.kucing-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* Tampilan layar kecil */
+@media (max-width: 700px) {
+    .kucing-container {
+        grid-template-columns: 1fr;
+    }
+
+    .kucing-card {
+        max-width: 350px;
+        width: 100%;
+        box-sizing: border-box;
+        justify-self: center;
+    }
+}
+
+header {
+    background: linear-gradient(135deg, #FFD18A, #F4A340);
+    color: #493525;
+    padding: 25px 20px;
+    text-align: center;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 12px rgba(120, 75, 30, 0.12);
+}
+
+.header-brand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.logo-kucing {
+    font-size: 42px;
+    background-color: #FFF5E6;
+    width: 65px;
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #694522;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #493525;
+    background-color: rgba(255, 245, 230, 0.75);
+    text-decoration: none;
+    padding: 10px 18px;
+    margin: 0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #FFFFFF;
+    color: #C87520;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 500px) {
+    .header-brand {
+        flex-direction: column;
+    }
+
+    header h1 {
+        font-size: 25px;
+    }
+}
+
+header {
+    background: linear-gradient(135deg, #FFD18A, #F4A340);
+    color: #493525;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    border-radius: 0 0 25px 25px;
+    box-shadow: 0 4px 12px rgba(120, 75, 30, 0.12);
+}
+
+.header-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-kucing {
+    font-size: 35px;
+    background-color: #FFF5E6;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.tagline {
+    margin: 5px 0 0;
+    font-size: 13px;
+    color: #694522;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav a {
+    color: #493525;
+    background-color: #FFF5E6;
+    text-decoration: none;
+    padding: 11px 17px;
+    margin: 0;
+    border-radius: 25px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: white;
+    color: #C87520;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    nav {
+        justify-content: flex-start;
+    }
+
+    header h1 {
+        font-size: 22px;
+    }
+}
+
+.fakta {
+    display: none;
+    background-color: #FFF0D5;
+    color: #80501D;
+    padding: 18px;
+    border-radius: 12px;
+    margin-top: 15px;
+    line-height: 1.7;
+}
+
+.fakta button {
+    margin-top: 10px;
+}
