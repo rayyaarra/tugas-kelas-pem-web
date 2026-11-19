@@ -29,37 +29,51 @@
 - **JavaScript** – Membuat interaksi dan menjalankan fungsi website.
 - **Cat Fact Ninja API** – Mengambil data fakta unik tentang kucing.
 
+## 💻 Penerapan HTML, CSS, JavaScript, API
+
+### 1. HTML (HyperText Markup Language)
+
+HTML digunakan untuk membangun struktur halaman website Meow House. Penerapannya terdapat pada halaman Home dan Jenis-Jenis Kucing, yang mencakup bagian navigasi, judul, teks informasi, gambar, dan tombol interaktif.
+
+### 2. CSS (Cascading Style Sheets)
+
+CSS digunakan untuk mengatur tampilan website agar lebih menarik dan nyaman dilihat. Pengaturan meliputi warna, jenis dan ukuran tulisan, tata letak, jarak antar elemen, serta desain tombol dan kartu informasi kucing.
+
+### 3. JavaScript
+
+JavaScript digunakan untuk memberikan fungsi interaktif pada website. Salah satu penerapannya adalah tombol pada halaman Home yang dapat mengubah teks sambutan ketika diklik. JavaScript juga digunakan untuk menjalankan fungsi pengambilan fakta kucing dari API.
+
+### 4. API (Application Programming Interface)
+
+Website Meow House menggunakan **Cat Fact Ninja API** untuk mengambil fakta unik tentang kucing. Data diperoleh melalui proses `fetch()`, kemudian diolah dalam format JSON dan ditampilkan pada halaman website.
+
+URL API: https://catfact.ninja/fact
+
 ## 📸 Dokumentasi Website
 
 ### 1. Halaman Home
 
-Menampilkan tampilan utama website Meow House yang berisi sambutan dan pengenalan mengenai kucing.
+Menampilkan halaman utama website Meow House yang berisi sambutan dan pengenalan singkat mengenai kucing.
 
 ![Halaman Home](dokumentasi/home.png)
 
 ### 2. Implementasi JavaScript
 
-Menunjukkan keberhasilan fungsi JavaScript melalui tombol interaktif pada halaman Home.
+Menunjukkan keberhasilan fungsi JavaScript melalui tombol interaktif yang dapat mengubah teks pada halaman Home.
 
 ![Implementasi JavaScript](<dokumentasi/home js.png>)
 
 ### 3. Halaman Jenis-Jenis Kucing
 
-Menampilkan informasi mengenai tiga jenis kucing, yaitu Persia, British Shorthair, dan Siamese.
+Menampilkan informasi mengenai tiga jenis ras kucing, yaitu Persia, British Shorthair, dan Siamese.
 
-![Halaman Jenis-Jenis Kucing](<dokumentasi/jenis jenis kucing.png>)
+![Halaman Jenis Kucing](<dokumentasi/jenis jenis kucing.png>)
 
 ### 4. Implementasi API
 
 Menunjukkan keberhasilan integrasi API dalam mengambil dan menampilkan fakta unik tentang kucing.
 
 ![Implementasi API](dokumentasi/API.png)
-
-## 🌐 API yang Digunakan
-
-Website ini menggunakan **Cat Fact Ninja API** untuk memperoleh informasi berupa fakta unik tentang kucing.
-
-URL API: https://catfact.ninja/fact
 
 ## 📂 Struktur Project
 
@@ -91,7 +105,15 @@ web kucing/
 
 2. Buka folder project menggunakan Visual Studio Code.
 3. Jalankan file `index.html` menggunakan ekstensi Live Server.
-4. Website dapat diakses melalui browser.
+4. Website akan terbuka secara otomatis melalui browser.
+
+## 🌐 API yang Digunakan
+
+**Cat Fact Ninja API**
+
+API ini digunakan untuk memperoleh fakta-fakta unik mengenai kucing.
+
+URL: https://catfact.ninja/fact
 
 ## 👩‍💻 Pengembang
 
