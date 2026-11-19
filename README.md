@@ -1,68 +1,78 @@
 # 🐱 Meow House
 
-**Meow House** merupakan website sederhana yang dibuat untuk memberikan informasi seputar kucing. Website ini menyediakan informasi mengenai beberapa jenis ras kucing serta fakta-fakta unik tentang kucing yang dapat diakses secara interaktif.
+**Meow House** merupakan website yang menyediakan informasi seputar kucing, mulai dari pengenalan kucing, berbagai jenis ras kucing, hingga fakta-fakta unik tentang kucing. Website ini dibuat menggunakan HTML, CSS, dan JavaScript serta dilengkapi dengan integrasi API.
 
 ## 📌 Fitur Website
 
 1. **Home**  
-   Halaman utama yang menampilkan sambutan dan pengenalan singkat tentang website Meow House.
+   Menampilkan halaman utama yang berisi sambutan dan pengenalan singkat mengenai website Meow House.
 
-2. **Interaksi Tombol**  
-   Pengguna dapat menekan tombol "Klik Saya" untuk mengubah teks sambutan pada halaman utama.
+2. **Interaksi JavaScript**  
+   Menyediakan tombol interaktif yang dapat digunakan pengguna untuk melihat perubahan teks pada halaman Home.
 
-3. **Informasi Jenis Kucing**  
-   Menampilkan tiga jenis ras kucing, yaitu:
-   - Kucing Persia
+3. **Jenis-Jenis Kucing**  
+   Menampilkan informasi mengenai tiga jenis ras kucing, yaitu:
+   - Persia
    - British Shorthair
-   - Kucing Siamese
+   - Siamese
 
-4. **Fakta Kucing**  
-   Menampilkan fakta unik tentang kucing menggunakan API dari Cat Fact Ninja.
+4. **Integrasi API**  
+   Menggunakan Cat Fact Ninja API untuk mengambil dan menampilkan fakta unik tentang kucing.
 
 5. **Navigasi Halaman**  
-   Menyediakan navigasi untuk berpindah antara halaman Home dan Jenis Kucing.
+   Memudahkan pengguna berpindah antara halaman Home dan Jenis-Jenis Kucing.
 
 ## 🛠️ Teknologi yang Digunakan
 
 - **HTML** – Membuat struktur halaman website.
 - **CSS** – Mengatur tampilan dan desain website.
-- **JavaScript** – Menambahkan interaksi dan fungsi pada website.
-- **Cat Fact Ninja API** – Mengambil fakta unik tentang kucing secara dinamis.
+- **JavaScript** – Membuat interaksi dan menjalankan fungsi website.
+- **Cat Fact Ninja API** – Mengambil data fakta unik tentang kucing.
 
 ## 📸 Dokumentasi Website
 
 ### 1. Halaman Home
 
-Menampilkan halaman utama Meow House yang berisi sambutan dan pengenalan singkat mengenai kucing.
+Menampilkan tampilan utama website Meow House yang berisi sambutan dan pengenalan mengenai kucing.
 
 ![Halaman Home](dokumentasi/home.png)
 
-### 2. Halaman Jenis-Jenis Kucing
+### 2. Implementasi JavaScript
 
-Menampilkan tiga jenis ras kucing, yaitu Persia, British Shorthair, dan Siamese.
+Menunjukkan keberhasilan fungsi JavaScript melalui tombol interaktif pada halaman Home.
 
-![Halaman Jenis Kucing](dokumentasi/jenis-kucing.png)
+![Implementasi JavaScript](<dokumentasi/home js.png>)
 
-### 3. Fitur Fakta Kucing
+### 3. Halaman Jenis-Jenis Kucing
 
-Menampilkan fakta unik tentang kucing melalui integrasi Cat Fact Ninja API.
+Menampilkan informasi mengenai tiga jenis kucing, yaitu Persia, British Shorthair, dan Siamese.
 
-![Fakta Kucing](dokumentasi/fakta-kucing.png)
+![Halaman Jenis-Jenis Kucing](<dokumentasi/jenis jenis kucing.png>)
 
-## 📂 Struktur Folder
+### 4. Implementasi API
+
+Menunjukkan keberhasilan integrasi API dalam mengambil dan menampilkan fakta unik tentang kucing.
+
+![Implementasi API](dokumentasi/API.png)
+
+## 🌐 API yang Digunakan
+
+Website ini menggunakan **Cat Fact Ninja API** untuk memperoleh informasi berupa fakta unik tentang kucing.
+
+URL API: https://catfact.ninja/fact
+
+## 📂 Struktur Project
 
 ```text
 web kucing/
 │
 ├── dokumentasi/
+│   ├── API.png
+│   ├── home js.png
 │   ├── home.png
-│   ├── jenis-kucing.png
-│   └── fakta-kucing.png
+│   └── jenis jenis kucing.png
 │
 ├── images/
-│   ├── persia.jpg
-│   ├── british-shorthair.jpg
-│   └── siamese.jpg
 │
 ├── index.html
 ├── cats.html
@@ -73,24 +83,16 @@ web kucing/
 
 ## 🚀 Cara Menjalankan Website
 
-1. Clone repository ke komputer:
+1. Clone repository:
 
    ```bash
    git clone https://github.com/rayyaarra/tugas-kelas-pem-web.git
    ```
 
 2. Buka folder project menggunakan Visual Studio Code.
-
 3. Jalankan file `index.html` menggunakan ekstensi Live Server.
-
-4. Website akan terbuka secara otomatis melalui browser.
-
-## 🌐 API
-
-Website ini menggunakan Cat Fact Ninja API untuk mendapatkan fakta unik tentang kucing.
-
-URL API: https://catfact.ninja/fact
+4. Website dapat diakses melalui browser.
 
 ## 👩‍💻 Pengembang
 
-Project ini dibuat sebagai bagian dari tugas mata kuliah Pemrograman Web.
+Project Meow House dibuat untuk memenuhi tugas mata kuliah Pemrograman Web.
